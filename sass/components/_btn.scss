@@ -1,0 +1,21 @@
+.btn {
+  display: inline-flex;
+  border-radius: 5px;
+  background-color: $color-main;
+  height: 30px;
+  min-width: 30px;
+  text-decoration: none;
+  color: $color-light;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    padding: 0 5px;
+  }
+
+  &:hover {
+    font-weight: 600;
+  }
+}
