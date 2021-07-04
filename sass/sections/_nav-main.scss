@@ -2,26 +2,68 @@
   display: flex;
   width: 180px;
   position: fixed;
+  flex-direction: column;
   height: 100vh;
   background-color: $color-dark;
 
   .nav-list {
     list-style: none;
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
     padding: 0;
     width: 100%;
-    //display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $font-color;
 
-    .nav-list-link {
+
+    .nav-list-item {
       margin: 0;
-      padding: 15px 0 15px 10px;
-      border-left: 5px solid $color-dark;
-
-      &:hover {
-        background-color: $color-nav-hover;
-        color: $color-light;
-        border-color: $color-main;
+      padding: 0;
+      .nav-list-link {
+        display: block;
+        text-decoration: none;
+        color: $font-color;
+        margin: 0;
+        padding: 7px 0 7px 7px;
+        border-left: 5px solid $color-dark;
+  
+        &:hover {
+          background-color: $color-nav-hover;
+          color: $color-light;
+          border-color: $color-main;
+        }
       }
     }
+  }
+
+  .nav-main-icon {
+    padding: 5px;
+  }
+
+  .manager-container {
+    padding-left: 15px;
+  }
+
+  .manager {
+    display: flex;
+    height: 60px;
+    font-size: 12px;
+    color: $color-user;
+    align-items: center;
+    margin: 0;
+  }
+
+  .manager-img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 7px;
+  }
+
+  .brand {
+    font-family: $brand-font;
+    font-size: 26px;
+    color: $color-light;
+    padding: 10px 15px 10px 10px;
   }
 }

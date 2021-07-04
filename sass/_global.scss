@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: $paragraph-font;
   color: $font-color;
   font-size: $font-size-par;
   box-sizing: border-box;
@@ -10,4 +10,11 @@ body {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  padding-left: 180px;
+  margin: 0;
+  justify-content: center;
 }
