@@ -4,12 +4,16 @@
   justify-content: center;
   margin: 0;
   padding-left: 25px;
-  height: 60px;
+  min-height: 60px;
   border-bottom: 1px solid $font-color;
 
   &.par--title {
     display: flex;
     justify-content: left;
+  }
+
+  &.par--wrapper {
+    padding-right: 25px;
   }
 }
 
