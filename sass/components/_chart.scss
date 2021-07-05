@@ -1,0 +1,53 @@
+.chart-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .chart-title {
+    flex: 1 100%;
+  }
+
+  .legend-tile {
+    padding: 10px;
+    margin: auto 30px;
+    display: flex;
+  }
+  
+  .legend-tile--active {
+    background-color: $color-chart-legend-tile;
+    border-radius: 5px;
+  }
+
+  .circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin: 5px;
+
+    &.circle--1 {
+      background-color: red;
+    }
+
+    &.circle--2 {
+      background-color: green;
+    }
+
+    &.circle--3 {
+      background-color: blue;
+    }
+  }
+
+  .chart {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+    .chart-image {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

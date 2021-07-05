@@ -14,6 +14,35 @@
 
   &.par--wrapper {
     padding-right: 25px;
+    border-bottom: none;
+  }
+
+  &.par--row {
+    padding-right: 25px;
+    flex: 1 100%;
+    justify-content: space-between;
+    transition: 0.5s;
+
+    i {
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      background-color: $color-chart-legend-tile;
+
+      i {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.par--btn {
+    flex: 1 100%;
+  }
+
+  &.par--btn--bottom {
+    border-bottom: hidden;
   }
 }
 

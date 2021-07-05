@@ -1,24 +1,29 @@
 .box {
-  margin-top: 80px;
+  flex: 1 100%;
+  margin-top: 20px;
   min-height: 200px;
-  min-width: 600px;
+  //min-width: 600px;
+  width: 1000px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
   background-color: $color-light;
 }
 
 .box-inside {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
   margin: 25px 0;
 
-  .col {
+  .col-2 {
     flex: 2 40%;
 
     &.par {
       padding-left: 0;
       margin: 10px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
