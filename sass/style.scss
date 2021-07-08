@@ -4,6 +4,7 @@
 @import "normalize";
 @import "global";
 @import "layout";
+@import "media";
 
 /* Components */
 
@@ -20,5 +21,6 @@
 @import "sections/header";
 @import "sections/nav-main";
 @import "sections/general";
+@import "sections/nav-mobile";
 
 /* Pages / Views */

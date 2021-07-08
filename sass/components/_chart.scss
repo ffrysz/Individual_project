@@ -41,13 +41,16 @@
   }
 
   .chart {
-    display: flex;
+    display: block;
     justify-content: center;
     padding-top: 15px;
+    overflow-x: auto;
 
     .chart-image {
       padding: 0;
       margin: 0;
+      width: auto;
+      max-width: 100%;
     }
   }
 }
