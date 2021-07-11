@@ -15,7 +15,18 @@
 </head>
 
 <body>
-  <header>
+
+  <div class="overlay show" id="overlay">
+    <div class="modal show" id="myModal">
+      <a href="#" class="btn-close js--close-modal">x</a>
+
+      <h4>Witaj w modalu!</h4>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <button type="reset" class="js--close-modal">Okay</button>
+    </div>
+  </div>
+  <header class="header--hidden">
     <ul class="header-list">
       <li class="header-list-elem">
         <i class="fas fa-wallet header-icon"></i>
@@ -85,6 +96,21 @@
       <p class="manager"><img src="/images/manager.jpg" class="manager-img" alt="manager_img"><span>Mikhael E.</span>
       </p>
     </div>
+    <div class="nav-header--mobile">
+      <ul class="header-list">
+        <li class="header-list-elem">
+          <i class="fas fa-wallet header-icon"></i>
+          <span class="header-money">$1500.00</span>
+          <i class="fas fa-angle-down header-icon"></i>
+        </li>
+        <li class="header-list-elem"><i class="fas fa-bell header-icon"></i></li>
+        <li class="header-list-elem">
+          <i class="fas fa-user header-icon"></i>
+          <span class="header-user">Filip Frysz</span>
+        </li>
+        <li class="header-list-elem"><i class="fas fa-sign-out-alt header-icon"></i></li>
+      </ul>
+    </div>
   </nav>
 
   <section class="general">
@@ -95,9 +121,8 @@
         </div>
         <div class="par">
           <div class="input-date">
-            <input type="text" name="date">
-            <div class="vertical-line"></div>
-            <input type="text" name="date">
+            <span class="first-span"><input type="text" name="date"></span>
+            <span><input type="text" name="date"></span>
             <i class="icon-calendar nav-main-icon icon-date"></i>
           </div>
           <a href="#" class="btn" aria-hidden="true"><i class="icon-refresh"></i></a>
@@ -137,6 +162,7 @@
             </div>
             <div class="chart">
               <img src="images/chart.JPG" class="chart-image" alt="chart">
+              <canvas id="myChart"></canvas>
             </div>
           </div>
         </div>
@@ -207,6 +233,7 @@
     </div>
   </section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/script.js"></script>
 
